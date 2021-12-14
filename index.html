@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="w-50 py-5">
+            <form>
+                <div class="form-group d-flex t">
+                    <input placeholder="Điểm chuẩn" type="number" class="form-control mr-2 w-auto" id="diemChuan">
+                    <select class="form-control mr-2 w-auto" id="khuVuc">
+                        <option>Chọn khu vực</option>
+                        <option value="k1">A</option>
+                        <option value="k2">B</option>
+                        <option value="k3">C</option>
+                    </select>
+                    <select class="form-control ml-2 w-auto" id="doiTuong">
+                        <option>Chọn đối tượng</option>
+                        <option value="d1">1</option>
+                        <option value="d2">2</option>
+                        <option value="d3">3</option>
+                    </select>
+                </div>
+                <div class="form-group d-flex t">
+                    <input placeholder="Điểm môn thứ nhất" type="number" class="form-control mr-2 w-auto" id="diem1">
+                    <input placeholder="Điểm môn thứ hai" type="number" class="form-control mr-2 w-auto" id="diem2">
+                    <input placeholder="Điểm môn thứ ba" type="number" class="form-control  mr-2 w-auto" id="diem3">
+                </div>
+                <button onclick="thi()" type="button" class="btn btn-primary">Kết quả</button>
+            </form>
+            <p id="kqThi" class="alert alert-danger">
+                kết quả sau thi
+            </p>
+        </div>
+        <div class="w-50 py-5">
+            <form>
+                <div class="form-group d-flex t">
+                    <input placeholder="Họ và Tên" type="input" class="form-control mr-2 w-auto" id="ten">
+                    <input placeholder="nhập số kw" type="number" class="form-control  mr-2 w-auto" id="sodien">
+                </div>
+                <button onclick="tienDien()" type="button" class="btn btn-primary">Tính tiền điện</button>
+            </form>
+            <p id="tienDien" class="alert alert-danger">
+
+            </p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF " crossorigin="anonymous "></script>
+</body>
+
+</html>
