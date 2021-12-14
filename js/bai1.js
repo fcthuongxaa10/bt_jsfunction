@@ -21,29 +21,28 @@ function thi() {
 function diemCongVung() {
     var khuVuc = document.getElementById("khuVuc").value;
     var diemCong = 0;
-    if (khuVuc = "k1") {
+    if (khuVuc == "k1") {
         diemCong = 2;
-    } else if (khuVuc = "k2") {
+    } else if (khuVuc == "k2") {
         diemCong = 1;
-    } else if (khuVuc = "k3") {
+    } else if (khuVuc == "k3") {
         diemCong = 0.5;
     } else {
         diemCong = 0;
     }
     return Number(diemCong);
-    console.log("fail");
+
 }
 
 function diemCongDoiTuong() {
     var doiTuong = document.getElementById("doiTuong").value;
     var diemCong = 0;
-    if (doiTuong = "d1") {
+    if (doiTuong == "d1") {
         diemCong = 2.5;
-    } else if (doiTuong = "d2") {
+    } else if (doiTuong == "d2") {
         diemCong = 1.5;
-    } else if (doiTuong = "d3") {
+    } else if (doiTuong == "d3") {
         diemCong = 1;
     } else { diemCong = 0; }
     return Number(diemCong);
-    console.log("fail");
 }
